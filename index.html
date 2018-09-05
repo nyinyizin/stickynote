@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="description" content="Sticky Note">
+    <title>Sticky Note</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css"
+  </head>
+
+  <body class="main-body">
+    <div class="content-header">
+      <div class="title">
+        <h1> Sticky Note </h1>
+      </div>
+      <div class="add-view">
+        <button class="btn" onclick="showPopupView()">Add Note</button>
+      </div>
+    </div>
+    <div class="content-body" id="noteList">
+    </div>
+
+    <script type="text/javascript" src="./js/main.js"></script>
+
+    <div id="notePopupView" class="note-popup-box">
+      <div class="note-popup-box-content">
+        <div class="row">
+          <span>Title</span>
+          <textarea id="title"></textarea>
+        </div>
+        <br/>
+        <div class="row">
+          <span>Description</span>
+          <textarea id="description"></textarea>
+        </div>
+        <div class="row">
+          <button id='btnAdd' class="btn btn-add" onclick="addNewNote(false,-1)"> Add </button>
+          <button class="btn" onclick="hidePopupView()"> Cancel </button>
+        </div>
+      </div>
+    </div>
+    <div class="save-view">
+      <button class="btn btn-save" onclick="saveNote()"> Save Notes </button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+.main-body{
+  background-color: #282C34;
+  color: white;
+}
+
+.content-header{
+  width: 100%;
+}
+
+.content-body{
+
+}
+.title{
+  text-align: center;
+}
+
+.btn{
+  width:100px;
+  height:35px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.add-view{
+  position: absolute;
+  top:25px;
+  right:25px;
+}
+
+.save-view{
+  position: absolute;
+  bottom:25px;
+  right:25px;
+}
+
+.note-item{
+  width: 350px;
+  background-color: #373E48;
+  display: inline-block;
+  border-radius: 20px;
+  margin:10px;
+
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+.note-title{
+  text-align: center;
+  font-size: 18px;
+  margin: 0;
+  background-color: white;
+  color: black;
+  padding: 5px;
+}
+
+.note-description{
+    padding:5px;
+    min-height: 40px;
+}
+
+.note-popup-box{
+  z-index: 1;
+  display: none;
+  position: fixed;
+  left:0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(103, 103, 103, 0.84);
+}
+
+.note-popup-box-content{
+  background: #ffffff;
+  width:80%;
+  height: 300px;
+  margin: auto;
+  margin-top: 20px;
+  color: #000000;
+  text-align: center;
+  border-radius: 15px;
+}
+
+#title,#description{
+  display: block;
+  width: 80%;
+  padding: 12px 20px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.row{
+  width: 100%;
+  padding:10px;
+  text-align: center;
+}
